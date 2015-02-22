@@ -1,0 +1,94 @@
+@header-color: #999;
+
+#global-header {
+	height: 40px;
+	background: #fff;
+	background: rgba(255,255,255,0.9);
+	position: relative;
+	z-index: 100;
+
+	color: @header-color;
+
+
+	h1 {
+		margin: 0;
+		line-height: 40px;
+		font-size: 30px;
+		font-family: @body-font;
+		float: left;
+	}
+	a {
+		color: @header-color;
+
+		&:hover {
+			color: @purple;
+
+			.ring {
+				border-color: @purple;
+			}
+		}
+	}
+
+	.ring {
+		border-style: solid; 
+		border-width: 2px; 
+		border-color: @header-color; 
+		display: inline-block; 
+		position: relative;
+	    -webkit-transition: border-color 1s ease-in;
+	    -moz-transition: border-color 1s ease-in;
+	    -o-transition: border-color 1s ease-in;
+	    transition: border-color 1s ease-in;
+	}
+
+	#ring1 {
+		width: 25px;
+		height: 25px;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		left: 7px;
+		top: 1px;
+	}
+	#ring2 {
+		width: 13px;
+		height: 13px;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		left: -31px;
+		top: 1px;
+	}
+	#ring3 {
+		width: 16px;
+		height: 16px;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		left: -46px;
+		top: 9px;
+	}
+
+	#header-nav {
+		list-style-type: none;
+		float: left;
+		margin: 0;
+		margin-top: 13px;
+		padding: 0;
+
+
+		li {
+			display: inline;
+			padding: 0;
+			margin: 0 8px;
+
+			a {
+				border-bottom: 2px solid transparent;
+
+				&:hover {
+					border-color: @purple;
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,82 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: @background;
+	font-family: @body-font;
+	color: @font-color;
+	font-size: 14px;
+	line-height: 1.7em;
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: @body-italic;
+}
+strong {
+	font-weight: normal;
+	font-family: @body-bold;
+}
+
+a {
+	text-decoration: none;
+    -webkit-transition: color 1s ease-in, border-color 1s ease-in;
+    -moz-transition: color 1s ease-in, border-color 1s ease-in;
+    -o-transition: color 1s ease-in, border-color 1s ease-in;
+    transition: color 1s ease-in, border-color 1s ease-in;
+}
+
+.container {
+	padding: 0px 40px;
+}
+
+
+
+@media @media-screen-xs {
+ 	//only screen and (max-width: 767px)
+
+} 
+
+@media @media-screen-xs-landscape {
+ 	//only screen and (max-width: 767px) and (orientation : landscape)
+
+} 
+
+@media @media-screen-sm {
+ 	//only screen and (min-width: 768px)
+
+} 	
+
+@media-screen-sm-portrait {
+	//only screen and (min-width: 768px) and (max-width: 991px) and (orientation : portrait)
+
+}
+
+@media @media-screen-md {
+ 	//only screen and (min-width: 992px) 
+
+} 		
+
+@media @media-screen-md-wide {
+ 	//only screen and (min-width: 1200px)	Inteded to cover 1366x768+
+
+}
+
+@media @media-screen-lg {
+ 	//only screen and (min-width: 1400px) and (min-height: 700px)  Intended to cover 1440x900+
+
+} 
+
+@media @media-screen-xlg {
+	//only screen and (min-width: 1600px) and (min-height: 900px) Intended to cover 1920x1080
+
+}

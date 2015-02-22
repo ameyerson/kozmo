@@ -1,0 +1,69 @@
+.home {
+
+	.wrapper {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		overflow: hidden;
+		z-index: 0;
+		top: 0;
+		left: 0;
+	}
+	#video-bkg {
+		position: absolute;
+		top: 0px;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		background: url(images/video-bkg.png) 0 0 repeat;
+	}
+
+	.screen {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+
+		display: none;
+
+		&.live {
+			display: block;
+		}
+		.big-image {
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-position: center center;
+		}
+
+	}
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+
+	}
+	#screen-1 .overlay{
+		background: @yellow-transparent;
+	}	
+	#screen-2 .overlay{
+		background: @purple-transparent;
+	}	
+	#screen-3 .overlay{
+		background: @orange-transparent;
+	}
+	#screen-nav {
+		position: absolute;
+		bottom: 10%;
+		left: 10%;
+		background: red;
+		z-index: 10;
+	}
+
+}
